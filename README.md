@@ -12,6 +12,7 @@ Buid procedure
 ```
 > pip install mbed-cli
 ```
+:warning: This procedure may require ```sudo``` rights to complete correctly on Unix Systems.
 * Verify that mbed-cli version is at least 0.8.9:
 ```
 > mbed --version
@@ -33,7 +34,8 @@ Buid procedure
 ```
 > pip install -r mbed-os/requirements.txt
 ```
-* Go back to beetle-ble-app directory and compile the application:
+:warning: This procedure may require ```sudo``` rights to complete correctly on Unix Systems.
+* From the beetle-ble-app directory compile the application:
 ```
 * GCC_ARM:
 > mbed compile -m ARM_BEETLE_SOC -t GCC_ARM
