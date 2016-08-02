@@ -8,6 +8,14 @@ Buid procedure
 --------------
 
 * Setup the mbed environment. For all the information refer to [mbed](https://developer.mbed.org/).
+* Install mbed-cli (requires python >= 2.7.11):
+```
+pip install mbed-cli
+```
+* Verify that mbed-cli version is at least 0.8.9:
+```
+mbed --version
+```
 * Clone this repository:
 ```
 > git clone https://github.com/ARMmbed/beetle-ble-app.git
@@ -21,11 +29,9 @@ Buid procedure
 > mbed update
 > mbed sync
 ```
-* Temporarily fetch the latetes mbed core (this step will not be necessary once all the beetle patches will be part of mbed-os):
+* Install mbed-os core dependencies:
 ```
-> cd mbed-os/core
-> git fetch
-> git pull --rebase origin master
+pip install -r mbed-os/requirements.txt
 ```
 * Go back to beetle-ble-app directory and compile the application:
 ```
